@@ -1,0 +1,16 @@
+{
+	"server" : "/ants2/ANTS2/build/ants2",
+	"server_arguments" : [
+		"-o",
+		"Ants2ServerConsoleOutput.txt"
+	],
+	"ip" : "172.17.0.2",
+	"port" : 12345,
+	"server_ports" : [
+		10000,
+		10001,
+		10002,
+		10003
+	],
+	"threads" : 4
+}
