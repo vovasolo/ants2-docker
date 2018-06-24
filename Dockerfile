@@ -36,5 +36,7 @@ RUN cd /ants2 && git clone https://github.com/andrmor/ServDisp.git && cd ServDis
 RUN cd /ants2/ServDisp/build && qmake ../ServDisp.pro && make -j3
 COPY config.json /ants2/ServDisp/build/
 
+RUN gcc -march=native -E -v - </dev/null 2>&1 | grep cc1
+
 CMD ["/bin/bash"]
 
