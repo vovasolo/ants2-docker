@@ -23,7 +23,7 @@ RUN rm root_v6.14.00.Linux-ubuntu18-x86_64-gcc7.3.tar.gz
 RUN echo ". /opt/root/bin/thisroot.sh" >> ~/.bashrc
 
 # ANTS installation
-RUN mkdir /ants2 && cd ants2 && git clone -b Dev https://github.com/andrmor/ANTS2.git # refresh!
+RUN mkdir /ants2 && cd ants2 && git clone -b Dev https://github.com/andrmor/ANTS2.git # refresh+1!
 RUN cd /ants2/ANTS2 && mkdir build
 ### the effect of sourcing a script lasts only inside one RUN command
 ### so we need to pack it together with compilation as a one-liner
